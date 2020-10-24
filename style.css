@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7)
+    url("./img/IN-en-20200817-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    no-repeat center center/cover;
+  background-blend-mode: darken;
+  position: relative;
+}
+img {
+  width: 100%;
+  /* display: inline-block; */
+}
+.showcase-top {
+  position: relative;
+  height: 15vh;
+}
+/* display: flex;
+  justify-content: space-between;
+} */
+.showcase-top img {
+  position: absolute;
+  top: 20px;
+  left: 2rem;
+}
+.showcase-top a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 2rem;
+}
+.showcase-top img {
+  width: 170px;
+}
+
+/* button  */
+
+.btn {
+  background: #e50914;
+  color: white;
+  padding: 0.4rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.showcase-content {
+  width: 50%;
+  position: relative;
+  top: 20%;
+  left: 25%;
+  text-align: center;
+  position: relative;
+}
+
+.showcase-content h1 {
+  font-size: 4rem;
+  /* padding-bottom: 1rem; */
+}
+
+.showcase-content h3 {
+  padding: 0.9rem 0;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+.showcase-content p {
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.showcase-content input {
+  width: 75%;
+  font-size: 16px;
+  padding: 15px;
+  margin: 0.9rem 0;
+}
+.btn-lg {
+  padding: 15.1px;
+  font-size: 20px;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+.tv{
+  height: 500px;
+  width: 100%;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.6);
+  border-top: 10px solid rgba(255, 255, 255, 0.6);
+}
+.container{
+  display: flex;
+  height: 90%;
+  width: 80%;
+  margin: auto;
+}
+.text-container{
+  flex: 1;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+.text-container h1{
+  font-size: 2.9rem;
+}
+.text-container p{
+  font-size: 1.6rem;
+  padding: 0.8rem 0;
+}
+.img-container{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-container img{
+  width: 450px;
+}
+
+.mobile{
+  height: 500px;
+  width: 100%;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.6) ;
+}
+
+.tv__mobile{
+  height: 500px;
+  width: 100%;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.6) ;
+}
+
+.Questions{
+  min-height: 600px;
+  width: 100%;
+}
+
+.Questions h1{
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.6rem;
+}
+
+.que__container{
+  width: 60%;
+  margin: auto;
+  
+}
+
+.que__container .title{
+  /* border-bottom: 2px solid black; */
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.que__container .title h2{
+  font-size: 1.9rem;
+}
+.box{
+  margin-bottom: 1rem;
+  background: #303030;
+  
+  padding: 14px;
+}
+.para{
+  padding: 2rem;
+  font-size: 1.4rem;
+  transition: 0.9s;
+  display: none;
+  border-top: 2px solid black;
+}
+.plus{
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.text-show >.para{
+  display: block;
+}
+
+
+.reflect .title>.plus{
+  transform: rotate(40deg);
+}
+
+/* -------------------------------  Memebership --------------------  */
+.member{
+  text-align: center;
+  width: 60%;
+  height: 200px;
+  margin: auto;
+  padding: 1rem 0;
+
+}
+.member h3{
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.member input{
+ 
+    width: 60%;
+    padding: 18px;
+  }
+footer{
+  /* width: 70%;
+  margin: auto; */
+  position: relative;
+}
+footer h5{
+  text-align: center;
+}
+.grid__container{
+ width: 70%;
+ margin: auto;
+ /* border: 2px solid white; */
+}
+.col__grid{
+  /* border: 2px solid white; */
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  box-sizing: border-box;
+
+}
+
+.col__grid p{
+  padding: 0.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1284px) {
+  .showcase-content {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  .showcase-top img {
+    width: 100px;
+  }
+  .showcase {
+    height: 70vh;
+  }
+  .showcase-content h1 {
+    font-size: 1.8rem;
+  }
+  .showcase-content {
+    padding: 20px;
+    top: 0;
+    width: 100vw;
+    left: 0;
+  }
+  .btn {
+    padding: 0.3rem 1rem;
+  }
+  .showcase-content h3 {
+    font-size: 1.2rem;
+    padding: 0.5rem 4rem;
+  }
+  .showcase-content p {
+    font-size: 1rem;
+    padding: 0.5rem 4rem;
+  }
+  .showcase-content input {
+    width: 100%;
+    padding: 10px;
+  }
+  .btn-lg {
+    display: inline-block;
+
+    padding: 0.55rem;
+    border-radius: 2px;
+    box-shadow: 1px 5px 1px black;
+  }
+}
+
+  /* .btn-lg {
+    display: inline-block;
+
+    padding: 0.55rem;
+    border-radius: 2px;
+    box-shadow: 1px 5px 1px black;
+  }
+ */
